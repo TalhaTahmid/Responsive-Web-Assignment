@@ -180,3 +180,83 @@ nav ul li:nth-child(4) a {
     display: flex;
     justify-content: center;
 
+
+}
+
+.banner-container div {
+    flex: 1;
+}
+
+
+.banner-container img {
+    width: 100%;
+}
+
+.banner-container h1 {
+    font-size: 65px;
+}
+
+.orange {
+    color: var(--main-color);
+}
+
+
+@media (max-width: 575px) {
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+
+}
+
+
+/* product container start  */
+.products-container {}
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 10px;
+}
+
+.products h4 {
+    color: rgb(17, 17, 17);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin: 20px 0px;
+
+}
+
+.products h5 {
+    color: rgb(17, 17, 17);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+}
+
+@media (max-width: 575px) {
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .products h4,
+    h5 {
+
+        font-size: 16px;
+
+    }
+
+    .products img {
+        width: 171px;
+    }
+}
+
